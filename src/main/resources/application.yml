@@ -1,0 +1,15 @@
+spring:
+  profiles:
+    include: personal
+# DB接続共通設定
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    #Docker: mssql, local: localhost
+    url: jdbc:sqlserver:/localhost:1433;databaseName=todo
+    username: sa
+    password: Atsu/4685
+      
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
