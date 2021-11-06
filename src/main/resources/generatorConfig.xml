@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration> 
+	<classPathEntry location="C:\Users\nonaa\.m2\repository\sqljdbc_9.4\enu\mssql-jdbc-9.4.0.jre11.jar"></classPathEntry>
+    <context id="SqlServerTables"  targetRuntime="MyBatis3">
+        <jdbcConnection
+            connectionURL="jdbc:sqlserver://localhost:1433;databaseName=todo"
+            driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+            password="Atsu/4685"
+            userId="sa" />
+        <javaModelGenerator
+            targetPackage="com.example.domain"
+            targetProject="src/main/java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+        <sqlMapGenerator
+            targetPackage="com.example.domain"
+            targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+        <javaClientGenerator
+            targetPackage="com.example.mapper"
+            targetProject="src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+        <table tableName="users" />
+        <table tableName="todos" />
+    </context>
+</generatorConfiguration>
