@@ -1,6 +1,7 @@
 package com.example.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +16,8 @@ public class Todo {
     private LocalDate startDate;
     private LocalDate endDate;
     private LocalDate dueDate;
-    private LocalDate createdAt;
-    private LocalDate updatedAt;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
     private String content;
-   
+	
 }
