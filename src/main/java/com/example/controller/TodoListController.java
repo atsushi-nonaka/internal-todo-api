@@ -19,11 +19,10 @@ public class TodoListController {
 	
 	@GetMapping(EntryPoint.TODOS)
 	public TodoListObject getTodoList() {
-		//log.info("サイト一覧取得開始");
+		log.info("サイト一覧取得開始");
 		long startTime = System.currentTimeMillis(); 
 		TodoListObject todoListObject = service.getTodoList();
-		//log.info("サイト一覧取得終了");
-		System.out.println(System.currentTimeMillis() - startTime);
+		log.info("サイト一覧取得終了", System.currentTimeMillis() - startTime);
 		return todoListObject;
 	}
 }
