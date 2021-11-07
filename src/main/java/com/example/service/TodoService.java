@@ -9,7 +9,6 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example.domain.Todo;
 import com.example.mapper.TodosMapper;
 import com.example.model.UpsertTodoParameter;
-import com.example.model.DeleteTodoParameter;
 
 @Service
 @Transactional
