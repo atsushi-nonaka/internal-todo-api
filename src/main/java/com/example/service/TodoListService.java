@@ -5,13 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.controller.TodoListController;
 import com.example.domain.Todo;
 import com.example.domain.TodosExample;
 import com.example.mapper.TodosMapper;
 import com.example.model.TodoListObject;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Service
 public class TodoListService {
