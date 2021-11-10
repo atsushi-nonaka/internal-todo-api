@@ -21,7 +21,7 @@ public class CreateTodoController {
 	@PostMapping(EntryPoint.CREATE_TODO)
 	public void createTodo(@RequestBody UpsertTodoParameter param) {
 		log.info("登録処理を開始します");
-		System.out.println("test");
+		System.out.println("tes");
 		long currentTime = System.currentTimeMillis();
 		service.addTodo(param);
 		log.info("登録処理を完了しました", System.currentTimeMillis() - currentTime);
